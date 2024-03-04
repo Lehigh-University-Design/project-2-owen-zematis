@@ -1,0 +1,242 @@
+
+:root {
+    --background-color: rgb(0, 238, 255);
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --body-color: rgb(0, 55, 255);
+  }
+  
+  body {
+    font-family: "Ropa Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--background-color);
+    background-image: url(images/pexels-francesco-ungaro-3181208.jpg);
+    background-size: cover;
+    margin: 1em;
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  
+  h2, h3, h4 {
+    font-weight: 600;
+  }
+  
+  .container {
+    max-width: 1080px;
+    margin: 0 auto
+  }
+  
+  /* Masthead */
+  masthead {
+    font-family: "Ropa Sans", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: var(--background-color);
+    color: var(--light-color);
+    margin-bottom: 1em;
+  }
+  
+  masthead h1 {
+    margin-right: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+  }
+  
+  masthead img {
+    display: inline-block;
+    align-self: center;
+    width: auto;
+    height: 2.5em;
+    margin-right: .5em;
+  }
+  
+  masthead ul {
+    padding-inline-start: 0;
+  }
+  
+  masthead li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  masthead a {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: all 0.3s ease 0s;
+  }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--background-color);
+  margin: 1em;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+h2 {
+    font-family: "Ropa Sans", sans-serif;
+    font-size: 1.5em;
+  font-weight: 300;
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto
+}
+
+/* Masthead */
+masthead {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--body-color);
+  color: var(--light-color);
+  margin-bottom: 1em;
+}
+
+masthead h1 {
+  margin-right: auto;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto 0 0;
+}
+
+masthead img {
+  display: inline-block;
+  align-self: center;
+  width: auto;
+  height: 2.5em;
+  margin-right: .5em;
+}
+
+masthead ul {
+  padding-inline-start: 0;
+}
+
+masthead li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+masthead a {
+  text-decoration: none;
+  font-size: 26px;
+  color: var(--light-color);
+  transition: all 0.3s ease 0s;
+}
+masthead a:hover {
+    color: #fe6dd0;
+  }
+  
+  /* main */
+  
+  #content {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2em;
+    margin-bottom: 1em;
+    color: var(--light-color);
+    padding: 5em;
+  }
+  
+  .post {
+    margin-bottom: 1em;
+    .img-container {
+      aspect-ratio: 1/1;
+    }
+    .post-stuff {
+      display: flex;
+      align-items: flex-start;
+    }
+    p {
+      margin-top: 0;
+    }
+    img {
+      width: 33%;
+      height: auto;
+      display: block;
+      margin-right: 1em;
+    }
+  }
+  
+  .big-post {
+    margin-bottom: 1em;
+    .img-container {
+      aspect-ratio: 4/3;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  
+  .post:last-child, .big-post:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* media queries */
+  @media only screen and (max-width: 768px) {
+    
+    body {
+      font-size: 16px;
+    }
+  
+    masthead {
+      text-align: center;
+      flex-flow: column nowrap;
+    }
+    masthead ul {
+      margin-bottom: 0;
+    }
+    masthead h1 {
+      margin-right: 0;
+    }
+    masthead img {
+      margin-right: 0;
+    }
+  
+    #content {
+      padding: 1em;
+      gap: 1em;
+      grid-template-columns: 1fr;
+    }
+    .main {
+      order: 2;
+    }
+    .sidebar {
+      order: 1;
+    }
+  
+  }

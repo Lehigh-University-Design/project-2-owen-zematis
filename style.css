@@ -95,8 +95,8 @@
   
   #content {
     display: grid;
-    grid-template-columns: 8fr 2fr;
-    gap: 6em;
+    grid-template-columns: 4fr 1fr;
+    gap: 11em;
     margin-bottom: 1em;
     color: var(--light-color);
     padding: 3em;
@@ -130,7 +130,7 @@
       aspect-ratio: 4/3;
     }
     img {
-      width: 100%;
+      width: 120%;
       height: auto;
       display: block;
     }
@@ -178,6 +178,18 @@
    a:hover {
     color: var(--background-color);
   }
+
+  .div-img{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding-top:0%;
+  
+
+  img:hover{
+    transform:scale(1.05);
+  }
+}
   
   /* media queries */
   @media only screen and (max-width: 768px) {
